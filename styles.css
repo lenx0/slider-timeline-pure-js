@@ -135,6 +135,34 @@
     margin-top: 7%;
     background-color: transparent;
   }
+
+  .timeline {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year {
+    margin: 0 5px;
+}
+
+.separator {
+    color: #01943c;
+}
+
+.green-text {
+    color: #01943c;
+}
+
+.gray-text {
+    color: #a9a9a9;
+}
   
   /* .prev:hover, .next:hover {
   } */
