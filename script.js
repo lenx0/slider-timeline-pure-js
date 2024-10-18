@@ -17,5 +17,4 @@ function moveSlide(step) {
     showSlide(slideIndex);
 }
 
-// Inicializar o primeiro slide
 showSlide(slideIndex);

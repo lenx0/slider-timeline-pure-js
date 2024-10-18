@@ -36,9 +36,17 @@ body {
     margin-right: 190px;
 }
 
-h1 {
+.title-container {
     position: absolute;
-    margin-right: 637px;
+    margin-right: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Poppins", Medium;
+    /* margin-right: 637px; */
+    height: 300px;
     font-size: 251px;
     color: #CFD8CC;
 }
@@ -46,14 +54,38 @@ h1 {
 h2 {
     font-family: "Bebas Neue", sans-serif;
     position: absolute;
-    width: 100%;
-    padding-left: 30%;
+    /* width: 100%; */
+    /* padding-left: 30%; */
     font-size: 16px;
+    margin-top: 170px;
     font-weight: normal;
     letter-spacing: 11px;
     color: #2D2A2A;
     opacity: 1;
 }
+
+.green-text {
+    font-weight: bold;
+    color: #01943C; /* Verde */
+}
+
+.black-text {
+    color: #2D2A2A; /* Preto */
+    font-weight: 100;
+}
+
+.description-container {
+    font-family: "Poppins";
+    font-weight: 100;
+    font-size: 33px;
+    margin-top: 400px;
+    margin-right: 80px;
+
+    span {
+        margin-left: 10px;
+    }
+}
+
 
 .prev, .next {
     position: absolute;
