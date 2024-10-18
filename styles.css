@@ -26,18 +26,6 @@ body {
   padding-right: 17px;
 }
 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .background {
   background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
   background-size: 800% 800%;
@@ -197,7 +185,7 @@ h2 {
 /* .prev:hover, .next:hover {
   } */
 
-@media (max-width: 1500px) {
+@media (max-width: 1700px) {
   .slide-container {
     min-width: 100%;
     display: flex;
@@ -233,14 +221,13 @@ h2 {
     right: 0;
     /* margin-right: 380px;
       margin-top: 170px; */
-    margin-right: 0%;
+    margin-right: 4%;
     margin-top: 7%;
     background-color: transparent;
   }
 }
 
-@media (max-width: 1170px) {
-  @media (max-width: 1170px) {
+  @media (max-width: 1400px) {
     .buttons-container {
       display: flex;
       justify-content: space-between;
@@ -284,41 +271,6 @@ h2 {
     align-items: center;
     margin-left: 60px;
   }
-}
-
-@media(max-width: 1180px) {
-  .prev,
-    .next {
-      position: relative;
-      display: inline-block;
-      margin: 0 200px;
-      font-size: 20px;
-      margin-top: 30px;
-      padding: 0;
-      color: #01943c;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      z-index: 1;
-    }
-
-    .timeline {
-      margin-top: 0px;
-      font-family: "Poppins", sans-serif;
-      font-size: 20px;
-    }
-    
-    .timeline-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 0px;
-    }
-    
-    .year {
-      margin: 0;
-    }
-}
 
 @media (max-width: 1110px) {
   .slide-container {
