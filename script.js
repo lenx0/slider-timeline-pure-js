@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll('.slide-container');
 const totalSlides = slides.length;
 
 function showSlide(index) {
