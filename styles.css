@@ -146,6 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 60px;
 }
 
 .year {
@@ -153,7 +154,11 @@
 }
 
 .separator {
-    color: #01943c;
+    border: none;
+    border-top: 4px solid;
+    border-radius: 5px;
+    width: 50px;
+    margin: 0 24px;
 }
 
 .green-text {
@@ -161,7 +166,7 @@
 }
 
 .gray-text {
-    color: #a9a9a9;
+    color: #c9c1c1;
 }
   
   /* .prev:hover, .next:hover {
