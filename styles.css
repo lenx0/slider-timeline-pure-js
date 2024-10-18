@@ -41,6 +41,7 @@ body {
     margin-right: 650px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 h1 {
@@ -66,20 +67,27 @@ h2 {
 
 .green-text {
     font-weight: bold;
-    color: #01943C; /* Verde */
+    color: #01943C;
 }
 
 .black-text {
-    color: #2D2A2A; /* Preto */
+    color: #2D2A2A;
     font-weight: 100;
+}
+
+.description {
+    font-size: 12px;
+    color: #423d3dd0;
+    opacity: 10;
 }
 
 .description-container {
     font-family: "Poppins";
     font-weight: 100;
     font-size: 33px;
+    letter-spacing: 0px;
     margin-top: 400px;
-    margin-right: 80px;
+    margin-right: 50px;
 
     span {
         margin-left: 10px;
