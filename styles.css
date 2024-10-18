@@ -26,17 +26,41 @@ body {
   padding-right: 17px;
 }
 
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background {
+  background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #91eae4);
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+}
+
 .slides {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .slide-container {
+  position: relative;
+  overflow: hidden;
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+}
+
+.slide-container:hover .title-container, 
+.slide-container:hover .description-container {
+  transform: translateZ(0px);
 }
 
 .slide img {
