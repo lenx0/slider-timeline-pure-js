@@ -511,7 +511,7 @@ h2 {
   .prev,
 .next {
   position: absolute;
-  top: 50%;
+  top: 95%;
   font-size: 20px;
   transform: translateY(-50%);
   color: #01943c;
@@ -521,25 +521,6 @@ h2 {
   cursor: pointer;
   z-index: 1;
 }
-
-/* .prev {
-  position: absolute;
-  left: 0;
-  margin-left: 275px;
-  margin-top: 170px; 
-  margin-left: 18%;
-  margin-top: 10%;
-  background-color: transparent;
-}
-
-.next {
-  right: 0;
-  margin-right: 380px;
-  margin-top: 170px;
-  margin-right: 14%;
-  margin-top: 10%;
-  background-color: transparent;
-} */
 
 .prev {
   position: absolute;
@@ -553,14 +534,14 @@ h2 {
 .next {
   position: absolute;
   right: 0;
-  margin-right: 0;
+  margin-right: 16%;
   margin-left: 0;
   /* margin-right: 380px;
       margin-top: 170px; */
 }
 
   .timeline-container {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
   }
 
