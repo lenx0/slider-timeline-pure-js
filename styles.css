@@ -201,34 +201,15 @@ h1 {
 }
 
 @media (max-width: 1400px) {
-  .buttons-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-
-  .prev,
-  .next {
-    position: relative;
-    display: inline-block;
-    margin: 0 400px;
-    font-size: 20px;
-    margin-top: 30px;
-    padding: 0;
-    color: #01943c;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-  }
 
   .prev {
     order: 1;
+    margin: 2%;
   }
 
   .next {
     order: 2;
+    margin: 2%;
   }
 }
 
@@ -305,7 +286,7 @@ h1 {
 
   .prev,
   .next {
-    top: 50%;
+    top: 80%;
     font-size: 20px;
     transform: translateY(-50%);
     color: #01943c;
@@ -325,7 +306,7 @@ h1 {
   .next {
     right: 0;
     margin-left: 0;
-    margin-right: 18%;
+    /* margin-right: 18%; */
     margin-top: 0;
   }
 
@@ -342,6 +323,7 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-left: 0;
+    margin-right: 0;
   }
 
   .year {
@@ -353,7 +335,7 @@ h1 {
     border-top: 4px solid;
     border-radius: 5px;
     width: 50px;
-    margin: 0 24px;
+    margin: 0 20px;
   }
 }
 
@@ -380,7 +362,14 @@ h1 {
     min-width: 100%;
     flex-direction: column;
   }
-
+  
+  .title-container {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    margin-left: 50px;
+    flex-direction: column;
+  }
   .text-container {
     padding: 10px;
     margin: 40px;
@@ -394,18 +383,23 @@ h1 {
   .title-container.h1 {
     font-size: 20px;
   }
+  
+  .title-container h1 {
+    font-size: 180px;
+    margin-left: 30px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .title-container h2 {
+    font-size: 15px;
+    margin-left: 25px;
+  }
 
   h3 {
     width: 100vw;
   }
 
-  .title-container {
-    display: flex;
-    width: 100vw;
-    text-align: center;
-    margin-left: 50px;
-    flex-direction: column;
-  }
 
   img {
     width: 100vw;
@@ -419,22 +413,11 @@ h1 {
     align-items: center;
   }
 
-  .title-container h1 {
-    font-size: 180px;
-    margin-left: 30px;
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .title-container h2 {
-    font-size: 15px;
-    margin-left: 25px;
-  }
 
   .prev,
   .next {
     position: absolute;
-    top: 95%;
+    top: 85%;
     font-size: 20px;
     transform: translateY(-50%);
     color: #01943c;
@@ -456,9 +439,14 @@ h1 {
 
   .next {
     position: absolute;
+    background-color: transparent;
     right: 0;
     margin-right: 16%;
     margin-left: 0;
+  }
+
+  /* .timeline {
+   margin-left: 50px;
   }
 
   .timeline-container {
@@ -468,10 +456,78 @@ h1 {
   }
 
   .separator {
-    margin: 10px 0;
+    margin: 0 15;
+    width: 50px;
   }
 
   .year {
-    font-size: 18px;
+    font-size: 15px;
+  } */
+
+  .timeline {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    /* font-size: 15px; */
+    font-size: 1.4rem;
+  }
+  
+  .timeline-container {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+  
+  .year {
+    margin: 0 1px;
+  }
+  
+  .separator {
+    border: none;
+    border-top: 4px solid;
+    border-radius: 5px;
+    width: 50px;
+    margin: 0 2%;
+  }
+}
+
+@media(max-width: 700px ) {
+  .separator {
+    margin: 2%;
+  }
+
+  .timeline {
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .title-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    margin: 0;
+  }
+  
+  h1 {
+    font-family: "Poppins", Medium;
+    text-align: center;
+    height: 300px;
+    font-size: 251px;
+    color: #cfd8cc;
+  }
+
+  .text-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .separator {
+    margin: 0 0.8%;
+  }
+
+  .timeline {
+    font-size: 1.3rem;
   }
 }
