@@ -246,7 +246,7 @@ h1 {
 
   .title-container h2 {
     font-size: 14px;
-    margin-top: 150px;
+    margin-top: 180px;
   }
 
   .description-container {
@@ -510,12 +510,16 @@ h1 {
     margin: 0;
   }
   
-  h1 {
+  .h1title {
     font-family: "Poppins", Medium;
     text-align: center;
     height: 300px;
-    font-size: 251px;
+    font-size:13rem !important;
     color: #cfd8cc;
+  }
+
+  .h2title {
+    margin-top: 150px !important;
   }
 
   .text-container {
