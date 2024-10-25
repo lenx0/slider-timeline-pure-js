@@ -51,7 +51,7 @@ body {
   margin-right: 650px;
   display: flex;
   flex-direction: column;
-  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -65,7 +65,7 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
   position: absolute;
   font-size: 16px;
-  margin-top: 170px;
+  margin-top: 180px;
   font-weight: normal;
   letter-spacing: 11px;
   color: #2d2a2a;
@@ -145,6 +145,14 @@ h1 {
   align-items: center;
   margin-left: 60px;
 }
+
+/* .timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #01943c;
+} */
 
 .year {
   margin: 0 5px;
@@ -362,7 +370,6 @@ h1 {
 }
 
 @media (max-width: 800px) {
-
   body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -389,14 +396,27 @@ h1 {
   .text-container {
     padding: 10px;
     margin: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: bottom;
+    align-items: bottom;
     text-align: center;
-    padding-left: 40px;
+  }
+
+  .title-container.h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    width: 100vw;
   }
 
   .title-container {
     display: flex;
+    width: 100vw;
+    text-align: center;
+    margin-left: 50px;
     flex-direction: column;
-    margin-bottom: 100px;
   }
 
   img {
@@ -405,6 +425,10 @@ h1 {
 
   .description {
     font-size: 14px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .title-container h1 {
