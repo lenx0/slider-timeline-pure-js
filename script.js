@@ -13,7 +13,6 @@ function showSlide(index) {
     const newTranslateValue = -slideIndex * 100;
     document.querySelector('.slides').style.transform = `translateX(${newTranslateValue}%)`;
     
-    // Atualiza a timeline
     updateTimeline();
 }
 
